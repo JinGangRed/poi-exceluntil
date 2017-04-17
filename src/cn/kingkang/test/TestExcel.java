@@ -32,7 +32,7 @@ public class TestExcel {
 
 	@Test
 	public void testExcelRead(){
-		file = new File("C:\\Users\\sks\\Desktop\\java\\hel\\点名册.xls");
+		file = new File("C:\\点名册.xls");
 		try {
 			List<ExcelSheet> excelSheets = ExcelUntil.getExcelData(file, null, 1);
 			System.out.println(excelSheets);
@@ -46,7 +46,7 @@ public class TestExcel {
 	}
 	@Test
 	public void testExcelWrite(){
-		file = new File("C:\\Users\\sks\\Desktop\\java\\hel\\点名册.xls");
+		file = new File("C:\\点名册.xls");
 		try {
 			List<ExcelSheet> excelSheets = ExcelUntil.getExcelData(file, null, 1);
 			for (ExcelSheet excelSheet : excelSheets) {
